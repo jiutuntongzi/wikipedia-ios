@@ -7,7 +7,7 @@
 #import "WMFRelatedSearchResults.h"
 #import <WMF/WMF-Swift.h>
 
-static const NSInteger WMFMaximumSavedOrReadDaysAgoForRelatedPages = 3;
+static const NSInteger WMFMaximumSavedOrReadDaysAgoForRelatedPages = 0;
 
 NS_ASSUME_NONNULL_BEGIN
 
