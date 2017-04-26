@@ -1625,7 +1625,8 @@ const NSInteger WMFExploreFeedMaximumNumberOfDays = 30;
                         }
                     } break;
                     case NSFetchedResultsChangeMove:
-                        [self.collectionView moveSection:change.fromIndexPath.row toSection:change.toIndexPath.row];
+                        [self.collectionView deleteSections:[NSIndexSet indexSetWithIndex:change.fromIndexPath.row]];
+                        [self.collectionView insertSections:[NSIndexSet indexSetWithIndex:change.toIndexPath.row]];
                         break;
                 }
             }
